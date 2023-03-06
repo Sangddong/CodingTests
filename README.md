@@ -1,7 +1,7 @@
 # CodingTests
 
 ## 1. Greedy
-|문제 출처|문제 이름|코드|
+|문제 출처|문제 이름|C++코드|
 |--|--|--|
 |백준|[2839](https://www.acmicpc.net/problem/2839)|[문제코드](https://github.com/Sangddong/CodingTests/blob/main/%EB%B0%B1%EC%A4%80%202839)|
 |백준|[11047](https://www.acmicpc.net/problem/11047)|[문제코드]()|
