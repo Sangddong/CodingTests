@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <algorithm>
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	vector<int> coin;
+	int N, num, result=1;
+
+	cin >> N;
+	for (int i = 0; i < N; i++) {
+		cin >> num;
+		coin.push_back(num);
+	}
+	sort(coin.begin(), coin.end());
+
+	num = 1;
+	while (1) {
+		for (int i = N - 1; i > -1; i--)
+			if (coin[i] <= num) 
+				num -= coin[i];
+		if (num == 0)
+			num = ++result;
+		else
+			break;
+	}
+	cout << result;
+}
