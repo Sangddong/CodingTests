@@ -1,0 +1,43 @@
+#include <string>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+struct num{
+    float users;
+    float fail;
+    int stage;
+};
+
+bool cmp(struct num A, struct num B){
+    if (A.fail==B.fail)
+        return A.stage<B.stage;
+    return A.fail>B.fail;
+}
+
+vector<int> solution(int N, vector<int> stages) {
+    vector<num> answer(N);
+    float total = stages.size();
+
+    for (int i = 0; i < stages.size(); i++)
+        if (stages[i]<=N)
+            answer[stages[i]-1].users++;
+
+    for (int i = 0; i < N; i++) {
+        if (answer[i].users<1)
+            answer[i].fail=0;
+        else
+            answer[i].fail=answer[i].users/total;
+        answer[i].stage=i+1;
+        total-=answer[i].users;
+    }
+
+    sort(answer.begin(), answer.end(), cmp);
+    
+    vector<int> ans;
+    for (int i = 0; i <N; i++)
+        ans.push_back(answer[i].stage);
+
+    return ans;
+}
