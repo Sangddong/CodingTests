@@ -1,0 +1,46 @@
+#include <vector>
+#include <algorithm>
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	vector<int> cal;
+	vector<int> num;
+	string input;
+	string temp;
+
+	cin >> input;
+	cal.push_back(0);
+	for (int i = 0; i < input.size() + 1; i++) {
+		if (i == input.size()) {
+			num.push_back(stoi(temp));
+			temp = '0';
+			break;
+		}
+		if ((input[i] == '-') || (input[i] == '+')) {
+			num.push_back(stoi(temp));
+			temp = '0';
+			if (input[i] == '-')
+				cal.push_back(-1);
+			else
+				cal.push_back(1);
+		}
+		else
+			temp += input[i];
+	}
+
+	int result = num[0];
+	for (int i = 1; i < cal.size(); i++) {
+		if (cal[i] == -1) {
+			result -= num[i];
+			if (i != cal.size() - 1)
+				if (cal[i + 1] == 1)
+					cal[i + 1] *= -1;
+		}
+		else
+			result += num[i];
+	}
+	cout << result;
+}
