@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+struct student {
+	string name;
+	int k;
+	int e;
+	int m;
+};
+
+bool cmp(struct student A, struct student B) {
+	if (A.k == B.k) {
+		if (A.e == B.e) {
+			if (A.m == B.m)
+				return A.name < B.name;
+			return A.m > B.m;
+		}
+		return A.e < B.e;
+	}
+	return A.k > B.k;
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+	int N;
+	cin >> N;
+	vector<student> input(N);
+	for (int i = 0; i < N; i++)
+		cin >> input[i].name >> input[i].k >> input[i].e >> input[i].m;
+
+	sort(input.begin(), input.end(), cmp);
+
+	for (int i = 0; i < N; i++)
+		cout << input[i].name << "\n";
+	return 0;
+}
