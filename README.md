@@ -39,9 +39,9 @@ ___
 |이것이 취업을 위한 코딩테스트다|위에서 아래로|[코드]()|
 |이것이 취업을 위한 코딩테스트다|성적이 낮은 학생 순서대로 출력|[코드]()|
 |이것이 취업을 위한 코딩테스트다|두 배열의 원소 교체|[코드]()|
-|백준|[10825](https://www.acmicpc.net/problem/10825)|[코드]()|
-|백준|[18310](https://www.acmicpc.net/problem/18310)|[코드]()|
-|프로그래머스스쿨|[실패율]()|[코드]()|
-|백준|[1715](https://www.acmicpc.net/problem/1715)|[코드]()|
+|백준|[10825](https://www.acmicpc.net/problem/10825)|[코드](https://github.com/Sangddong/CodingTests/blob/main/%EB%B0%B1%EC%A4%80%2010825)|
+|백준|[18310](https://www.acmicpc.net/problem/18310)|[코드](https://github.com/Sangddong/CodingTests/blob/main/%EB%B0%B1%EC%A4%80%2018310)|
+|프로그래머스스쿨|[실패율](https://school.programmers.co.kr/learn/courses/30/lessons/42889)|[코드](https://github.com/Sangddong/CodingTests/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20%EC%8B%A4%ED%8C%A8%EC%9C%A8)|
+|백준|[1715](https://www.acmicpc.net/problem/1715)|[코드](https://github.com/Sangddong/CodingTests/blob/main/%EB%B0%B1%EC%A4%80%201715)|
 
   ___
