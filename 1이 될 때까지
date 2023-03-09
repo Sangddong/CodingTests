@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+int main() {
+	int N, K, num = 0;
+	cin >> N >> K;
+	if (K == 1) {
+		cout << N;
+		return 0;
+	}
+
+	while (1) {
+		if (N == 1)
+			break;
+		if (N < K) {
+			num += N - 1;
+			break;
+		}
+		if (N % K == 0) {
+			N = N / K;
+			num++;
+		}
+		else {
+			num += N % K;
+			N -= N % K;
+		}
+	}
+	cout << num;
+}
