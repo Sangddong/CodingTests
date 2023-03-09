@@ -1,0 +1,16 @@
+#include <algorithm>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int input[200000];
+	int N;
+	cin >> N;
+	for (int i = 0; i < N; i++)
+		cin>>input[i];
+
+	sort(input, input+N);
+
+	cout << input[(N - 1) / 2];
+}
