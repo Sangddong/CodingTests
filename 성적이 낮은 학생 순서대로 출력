@@ -1,0 +1,20 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+
+int main() {
+	int N, b;
+	string a;
+	vector<pair<int, string>> score;
+	cin >> N;
+	for (int i = 0; i < N; i++) {
+		cin >> a >> b;
+		score.push_back({ b, a });
+	}
+
+	sort(score.begin(), score.end());
+
+	for (int i = 0; i < N; i++)
+		cout << score[i].second << " ";
+}
