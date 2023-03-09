@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<algorithm>
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	vector<int> arr;
+	int N, M, K, t;
+	cin >> N >> M >> K;
+	for (int i = 0; i < N; i++) {
+		cin >> t;
+		arr.push_back(t);
+	}
+    
+	sort(arr.begin(), arr.end());
+    
+	int F = arr[N - 1], S = arr[N - 2];
+	int c = M / (K + 1);
+	int sum = c * (K * F + S) + (M - c1 * (K + 1)) * F;
+	cout << sum;
+	
+    return 0;
+}
