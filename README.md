@@ -45,3 +45,8 @@ ___
 |백준|[1715](https://www.acmicpc.net/problem/1715)|[코드](https://github.com/Sangddong/CodingTests/blob/main/%EB%B0%B1%EC%A4%80%201715)|
 
   ___
+## 4. DFS/BFS
+|문제 출처|문제 이름|C++코드|
+|--|--|--|
+|이것이 취업을 위한 코딩테스트다|음료수 얼려먹기|[코드]()|
+|이것이 취업을 위한 코딩테스트다|미로 |[코드]()|
