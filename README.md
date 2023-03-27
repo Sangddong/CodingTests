@@ -48,5 +48,6 @@ ___
 ## 4. DFS/BFS
 |문제 출처|문제 이름|C++코드|
 |--|--|--|
-|이것이 취업을 위한 코딩테스트다|음료수 얼려먹기|[코드]()|
-|이것이 취업을 위한 코딩테스트다|미로 |[코드]()|
+|이것이 취업을 위한 코딩테스트다|음료수 얼려먹기|[코드](https://github.com/Sangddong/CodingTests/blob/main/%EC%9D%8C%EB%A3%8C%EC%88%98%20%EC%96%BC%EB%A0%A4%EB%A8%B9%EA%B8%B0
+)|
+|이것이 취업을 위한 코딩테스트다|미로 탈출|[코드](https://github.com/Sangddong/CodingTests/blob/main/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C)|
